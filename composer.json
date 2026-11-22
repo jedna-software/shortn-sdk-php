@@ -1,0 +1,49 @@
+{
+  "name": "jednasoftware/shortn-sdk",
+  "description": "PHP SDK for the Shortn Link API: links, analytics, workspaces, tags, UTM templates, teams, domains, reports and conversions.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://shortn.link",
+  "authors": [
+    {
+      "name": "Jedna Software",
+      "email": "github@jednasoftware.cz"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/jedna-software/shortn-sdk-php/issues",
+    "source": "https://github.com/jedna-software/shortn-sdk-php",
+    "docs": "https://docs.shortn.link/docs/api/"
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-json": "*"
+  },
+  "suggest": {
+    "ext-curl": "Used for HTTP when available; PHP streams are the fallback."
+  },
+  "autoload": {
+    "psr-4": {
+      "Shortn\\Sdk\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Shortn\\Sdk\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "php tests/run.php",
+    "smoke": "php tests/smoke.php",
+    "lint": "find src tests examples -name '*.php' -print0 | xargs -0 -n1 php -l"
+  },
+  "keywords": [
+    "shortn",
+    "shortn-link",
+    "url-shortener",
+    "short-links",
+    "analytics",
+    "conversions",
+    "attribution"
+  ]
+}

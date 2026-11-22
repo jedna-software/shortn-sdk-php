@@ -1,0 +1,7 @@
+/.env.example export-ignore
+/.gitattributes export-ignore
+/.github export-ignore
+/.gitignore export-ignore
+/CONTRIBUTING.md export-ignore
+/GAP_LIST.md export-ignore
+/tests export-ignore
